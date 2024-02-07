@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #272c34;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circular-frame,
+.dark {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.dark {
+    width: 210px;
+    height: 210px;
+    background-color: #272c34;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    animation: dark 4s linear infinite;
+}
+
+@keyframes dark {
+    0% {
+        background-color: #272c34;
+    }
+
+    30% {
+        background-color: transparent;
+    }
+
+    70% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #272c34;
+    }
+}
+
+.sky {
+    height: 65%;
+    width: 100%;
+    background-color: #7ddffc;
+}
+
+.sun {
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    background-color: #ffef00;
+    top: 7px;
+    left: 83px;
+    border-radius: 50%;
+    transform: rotate(-70deg);
+    transform-origin: 50% 400%;
+    animation: sunset 4s linear infinite;
+}
+
+@keyframes sunset {
+    0% {
+        transform: rotate(-70deg);
+    }
+
+    30% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(70deg);
+    }
+}
+
+.land {
+    height: 35%;
+    width: 100%;
+    background-color: #eddb74;
+}
+
+.pyramide {
+    position: relative;
+    width: 100%;
+}
+
+.left {
+    position: absolute;
+    width: 116px;
+    height: 57px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: pyramide-shade 4s linear infinite;
+}
+
+@keyframes pyramide-shade {
+    0% {
+        background-color: #fff;
+    }
+
+    30% {
+        background-color: #f1f1f1;
+    }
+
+    100% {
+        background-color: #dddada;
+    }
+}
+
+.right {
+    position: absolute;
+    width: 58px;
+    height: 57px;
+    background-color: white;
+    bottom: 0;
+    left: 65%;
+    clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+    transform: translate(-50%);
+    animation: pyramide-shade 4s linear reverse infinite;
+}
+
+.shadow {
+    position: absolute;
+    height: 30px;
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 50%;
+    clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+    transform: translate(-48%);
+    animation: shadow 4s linear infinite;
+}
+
+@keyframes shadow {
+    0% {
+        clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+    }
+
+    30% {
+        height: 10px;
+        clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+    }
+
+    100% {
+        clip-path: polygon(115px 0%, 231px 0%, 0% 100%);
+    }
+}
