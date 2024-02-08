@@ -9,3 +9,8 @@
 #Day 3
 
 ![GIF Recording 2024-02-07 at 10 42 52 PM](https://github.com/AhmedHassanHamid/100DaysCSS/assets/80314524/ac376ccc-a7b6-4889-9ed1-d1e66654178e)
+
+#Day 4
+
+![GIF Recording 2024-02-09 at 12 13 24 AM](https://github.com/AhmedHassanHamid/100DaysCSS/assets/80314524/faabecad-d1f9-4153-ab2c-8431ae65df22)
+
